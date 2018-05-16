@@ -134,7 +134,7 @@
                 </div>
               </div>              
             </div>
-            <div class="row">
+            <div class="row service-list">
               <div class="col-md-6 service-item">
                 <div class="media">
                   <div class="media-left">
@@ -226,7 +226,7 @@
         <section class="promo-content">
           <div class="promo-item">
             <div class="row promo-top">
-              <div class="col-sm-6 promo-detail">
+              <div class="col-sm-6 promo-detail hidden-xs">
                 <p class="promo-mark">Limited Time Offer</p>
                 <h3 class="promo-heading">Monday Microdermabrasion $25</h3>
                 <p class="promo-desc">All Walk-In are Welcome</p>
@@ -237,6 +237,12 @@
                   <img src="images/promo/promo-1.jpg" width="592" height="511" alt="Bellavita Promo" class="img-responsive">
                 </div>
                 <div class="promo-bg"></div>
+              </div>
+              <div class="col-sm-6 promo-detail visible-xs text-center">
+                <p class="promo-mark">Limited Time Offer</p>
+                <h3 class="promo-heading">Monday Microdermabrasion $25</h3>
+                <p class="promo-desc">All Walk-In are Welcome</p>
+                <a href="#" class="btn btn-green">CALL FOR AN APPOINTMENT</a>
               </div>
             </div>
           </div>
@@ -383,25 +389,37 @@
         </script>
         <script type="text/javascript">
           $('.gallery-carousel').owlCarousel({
-            stagePadding: 100,
             loop: true,
             responsive:{
               0:{
-                items:1
+                margin: 15,
+                items:1,
+                stagePadding: 40,
+                dots: false
+              },
+              640:{
+                margin: 15,
+                items:1,
+                stagePadding: 100,
+                dots: false
               },
               768:{
+                stagePadding: 100,
                 margin: 15,
                 items: 2
               },
               1200:{
+                stagePadding: 100,
                 margin: 30,
                 items: 3
               },
               1800:{
+                stagePadding: 100,
                 margin: 30,
                 items: 4
               },
               2200:{
+                stagePadding: 100,
                 margin: 30,
                 items: 5
               }
