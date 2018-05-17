@@ -558,6 +558,84 @@ textarea.form-control{
   text-align: center;
   margin-bottom: 80px;
 }
+.gallery-carousel{
+  position: relative;
+}
+.gallery-carousel .owl-nav{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  margin-top: 0;
+}
+.gallery-carousel .owl-nav span{
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  line-height: normal;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #333;
+}
+.gallery-carousel .owl-nav button{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.gallery-carousel .owl-nav .owl-prev{
+  left: 0;
+  right: auto;
+  margin-left: 0;
+  margin-right: auto;
+}
+.gallery-carousel .owl-nav .owl-next{
+  left: auto;
+  right: 0;
+  margin-left: auto;
+  margin-right: 0;
+}
+.gallery-carousel .owl-nav [class*='owl-']:hover {
+  background: transparent;
+  color: #333;
+}
+.service-modal .modal-content{
+  border-radius: 0;
+}
+.service-modal .modal-dialog{
+  width: 1024px;
+}
+.service-modal .modal-title{
+  font-family: 'Playfair Display Bold', Fallback, sans-serif;
+  font-size: 24px;
+  color: #1dbd90;
+}
+.service-modal .service-image{
+  margin-bottom: 15px;
+  max-height: 250px;
+  overflow: hidden;
+}
+.service-modal .modal-body{
+  padding: 25px 15px 25px 25px;
+}
+.service-modal .panel-group .panel{
+  border-radius: 0;
+  box-shadow: none;
+}
+.service-modal .panel-heading{
+  border-radius: 0;
+}
+.service-modal .service-title{
+  font-family: 'Poppins Semibold', Fallback, sans-serif;
+  font-size: 16px;
+}
+.service-modal .service-desc{
+  font-size: 14px;
+  line-height: 28px;
+}
 
 
 /* --- Contact Us --- */
@@ -681,6 +759,9 @@ textarea.form-control{
   .service-item .media-body{
     padding: 25px;
   }
+  .service-modal .modal-dialog{
+    width: 900px;
+  }
   .promo-content .promo-item{
     padding-left: 2.5%;
     padding-right: 2.5%;
@@ -758,6 +839,9 @@ textarea.form-control{
   .navbar-nav > li > a{
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .service-modal .modal-dialog{
+    width: 750px;
   }
   .cta-content .panel-cta{
     padding-left: 35px;
@@ -922,6 +1006,9 @@ textarea.form-control{
     overflow: hidden;
     margin-top: 30px;
     padding-top: 35px;
+  }
+  .service-modal .modal-dialog{
+    width: 100%;
   }
   .heading-service{
     position: relative;
@@ -1123,6 +1210,9 @@ textarea.form-control{
 @media screen and (max-width: 339px){
   .promo-top .promo-heading{
     font-size: 22px;
+  }
+  .cta-content .btn{
+    white-space: normal;
   }
 }
 

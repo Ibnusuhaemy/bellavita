@@ -19,6 +19,7 @@
         <link rel="stylesheet" type="text/css" href="vendors/bootstrap.3.3.7/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="vendors/owlcarousel.2.3.4/assets/owl.carousel.css">
         <link rel="stylesheet" type="text/css" href="vendors/owlcarousel.2.3.4/assets/owl.theme.default.css">
+        <link rel="stylesheet" type="text/css" href="vendors/malihu.custom.scrollbar/jquery.mCustomScrollbar.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
     </head>
@@ -97,6 +98,20 @@
                 <div class="bg-header"></div>
               </div>
               
+              <div class="item">
+                <img src="images/bg-hero.jpg" width="1450" height="699" alt="Bellavita Homepage" class="img-responsive">
+                <div class="container">
+                  <div class="row hero-caption">
+                    <div class="logo-text">
+                      <p class="welcome">Welcome to</p>
+                      <img src="images/bellavita-logo.png" width="356" height="80" alt="Bellavita Text Logo">
+                      <p class="salon">Salon</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-header"></div>
+              </div>
+              
             </div>
           </div>
           
@@ -145,7 +160,7 @@
                   <div class="media-body">
                     <h4 class="media-heading">Nail Salon</h4>
                     <p>Lorem ipsum dolor sit amet, constectur adipiscing elit...</p>
-                    <a href="#" class="btn btn-md btn-green">View Treatments</a>
+                    <a href="#" class="btn btn-md btn-green" data-toggle="modal" data-target=".nail-modal">View Treatments</a>
                   </div>
                 </div>
               </div>
@@ -159,7 +174,7 @@
                   <div class="media-body">
                     <h4 class="media-heading">Massage Therapy</h4>
                     <p>Lorem ipsum dolor sit amet, constectur adipiscing elit...</p>
-                    <a href="#" class="btn btn-md btn-green">View Treatments</a>
+                    <a href="#" class="btn btn-md btn-green" data-toggle="modal" data-target=".message-modal">View Treatments</a>
                   </div>
                 </div>
               </div>
@@ -173,7 +188,7 @@
                   <div class="media-body">
                     <h4 class="media-heading">Skin Care</h4>
                     <p>Lorem ipsum dolor sit amet, constectur adipiscing elit...</p>
-                    <a href="#" class="btn btn-md btn-green">View Treatments</a>
+                    <a href="#" class="btn btn-md btn-green" data-toggle="modal" data-target=".skin-modal">View Treatments</a>
                   </div>
                 </div>
               </div>
@@ -187,7 +202,7 @@
                   <div class="media-body">
                     <h4 class="media-heading">Waxing</h4>
                     <p>Lorem ipsum dolor sit amet, constectur adipiscing elit...</p>
-                    <a href="#" class="btn btn-md btn-green">View Treatments</a>
+                    <a href="#" class="btn btn-md btn-green" data-toggle="modal" data-target=".waxing-modal">View Treatments</a>
                   </div>
                 </div>
               </div>
@@ -201,7 +216,7 @@
                   <div class="media-body">
                     <h4 class="media-heading">Eyelash</h4>
                     <p>Lorem ipsum dolor sit amet, constectur adipiscing elit...</p>
-                    <a href="#" class="btn btn-md btn-green">View Treatments</a>
+                    <a href="#" class="btn btn-md btn-green" data-toggle="modal" data-target=".nail-modal">View Treatments</a>
                   </div>
                 </div>
               </div>
@@ -215,13 +230,430 @@
                   <div class="media-body">
                     <h4 class="media-heading">Boutique</h4>
                     <p>Lorem ipsum dolor sit amet, constectur adipiscing elit...</p>
-                    <a href="#" class="btn btn-md btn-green">View Detail</a>
+                    <a href="#" class="btn btn-md btn-green" data-toggle="modal" data-target=".nail-modal">View Detail</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        
+        <!-- Service Details Pop Up -->
+        <!-- Nail Content -->
+        <div class="modal fade nail-modal service-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Nail Salon</h4>
+              </div>
+              <div class="modal-body">
+                <div class="service-image">
+                  <img src="images/products/nails-salon-detail.jpg" width="1170" height="574" alt="Nail Salon Bellavita" class="img-responsive">
+                </div>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title service-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#eyelash" aria-expanded="true" aria-controls="collapseOne">
+                          EYELASH EXTENSIONS &amp; EYEBROW TINTING
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="eyelash" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          At Bella Vita, we specialize in safe and customized eyelash extensions. Our exclusive technique tailors to each 
+                          individual’s unique eye shape using only premium synthetic materials that are curled to imitate a natural lash. 
+                          Our eyelash extensions provide a rich-looking appearance that eliminates the need for mascara, giving you a 
+                          low-maintenance beauty routine.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title service-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#eyebrow" aria-expanded="false" aria-controls="collapseTwo">
+                          EYEBROW TINTING
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="eyebrow" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          For a quick pick-me-up, eyebrow tints offer a beautiful pop of color that lasts up to two weeks. Combine tinting 
+                          with a precision-style eyebrow waxing and you will be amazed at the instant youthful appearance it provides.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title service-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#manicure" aria-expanded="false" aria-controls="collapseThree">
+                          MANICURE
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="manicure" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          Botox is one of the leading and most effective treatments for wrinkles and lines. Revive is one of top 0.01% of 
+                          Med Spas in the nation offering this service.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title service-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#pedicure" aria-expanded="false" aria-controls="collapseThree">
+                          CLASSIC PEDICURE
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="pedicure" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          Relax and balance your feet with our spa pedicure treatment, full of key ingredients to enrich your skin with 
+                          beneficial nutrients. The classic pedicure includes a sea salt soak, nail reshape, cuticle details, 
+                          exfoliating scrub, massage with a moisturizing lotion, and a polish color of your choice.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title service-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#lavish" aria-expanded="false" aria-controls="collapseThree">
+                          LAVISH PEDICURE
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="lavish" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          Relieve your tensions and take your pedicure experience to the next level. This deluxe spa pedicure is a 
+                          four-step treatment with specific ingredients to give your feet valuable nutrients. Each pedicure uses 
+                          individually wrapped products to ensure a sanitary and hygienic session every time. The lavish spa pedicure 
+                          includes a warm deep sea salt soak, nail reshape, cuticle detailing, exfoliating sugar scrub, callus remover, 
+                          hydrating mud mask wrapped in hot towels, massage with a unique moisturizer lotion, and finish with a polish 
+                          of your choice.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title service-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#ineffable" aria-expanded="false" aria-controls="collapseThree">
+                          INEFFABLE PEDICURE
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="ineffable" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          For the ultimate indulgence, pamper yourself to a well-deserved treat! This “too good to describe in words” 
+                          ineffable spa pedicure will relax muscles, relieve blocked energy, reduce calluses, and diminish dry and 
+                          rough skin. Relieve your tensions with this spa pedicure by relaxing in our massage chair while your feet 
+                          are given a warm deep sea salt soak of your choice. We will then trim and reshape your nails, cuticle detail,
+                           exfoliating sugar scrub, callus remover, hydrating mud masque wrapped in hot towels, extended massage with a 
+                           unique moisturizing lotion, collagen wrapped treatment to richly hydrate and condition feet, and finish with 
+                           a polish of your choice.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              
+            </div>
+          </div>
+        </div>
+        
+        <!-- massage content -->
+        <div class="modal fade message-modal service-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Massage Therapy</h4>
+              </div>
+              <div class="modal-body">
+                <div class="service-image">
+                  <img src="images/products/message-therapy-detail.jpg" width="1170" height="574" alt="Message Therapy Bellavita" class="img-responsive">
+                </div>
+                <div class="panel-group" id="message" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title service-title">
+                        <a role="button" data-toggle="collapse" data-parent="#message" href="#therapeutic" aria-expanded="true" aria-controls="collapseOne">
+                          THERAPEUTIC ($65/$90)
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="therapeutic" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          The most popular massage using long, flowing, effleurage strokes with light to medium pressure. Created to 
+                          relax and improve circulation.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title service-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#message" href="#deeptissue" aria-expanded="false" aria-controls="collapseTwo">
+                          DEEP TISSUE ($75/$110)
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="deeptissue" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          Melt away your aches and pains with this deeper pressured massage; paying special attention to injured, 
+                          tired muscles.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title service-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#message" href="#prenatal" aria-expanded="false" aria-controls="collapseThree">
+                          PRENATAL ($70)
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="prenatal" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          Perfect treat for the mom to be. A relaxing yet therapeutic treatment to help ease tired muscles and joints. 
+                          This service is only available after first trimester.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title service-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#message" href="#hotstone" aria-expanded="false" aria-controls="collapseThree">
+                          HOT STONE MASSAGE ($80/$110)
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="hotstone" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          This massage incorporates heated River Rocks into your Therapeutic style massage for a profoundly calming 
+                          experience.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title service-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#message" href="#head" aria-expanded="false" aria-controls="collapseThree">
+                          HEAD TO TOES ($70/$90)
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="head" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          We start with a deep conditioning scalp, face, neck, and shoulders massage. This is followed by a reflexology 
+                          based foot massage ending with eucalyptus soaked hot towels. <strong>30 Minutes add-on $25</strong>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title service-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#message" href="#heat" aria-expanded="false" aria-controls="collapseThree">
+                          HEAT LOVERS ($70/$90)
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="heat" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          A full body massage that incorporates hot oils, hot stones and moist heat wraps. A perfect treatment for the 
+                          winter months or anytime you want to relax and sooth tired muscles.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              
+            </div>
+          </div>
+        </div>
+        
+        <!-- skin content -->
+        <div class="modal fade service-modal skin-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Skin Care</h4>
+              </div>
+              <div class="modal-body">
+                <div class="service-image">
+                  <img src="images/products/skin-care-detail.jpg" width="1170" height="574" alt="Skin Care Bellavita" class="img-responsive">
+                </div>
+                <div class="panel-group" id="message" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title service-title">
+                        <a role="button" data-toggle="collapse" data-parent="#message" href="#classic" aria-expanded="true" aria-controls="collapseOne">
+                          CLASSIC FACIAL (60 MIN $65)
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="classic" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          This pampering facial is tailored to your individual skin needs. Includes a relaxing European massage and 
+                          acupressure of face and scalp.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title service-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#mini" href="#deeptissue" aria-expanded="false" aria-controls="collapseTwo">
+                          MINI FACIAL (30 MIN $45)
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="mini" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          Enjoy the basics; a cleanse, exfoliation, hot towels, treatment mask and moisturizer all customized to your 
+                          particular skin type.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title service-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#antiaging" href="#prenatal" aria-expanded="false" aria-controls="collapseThree">
+                          ANTI-AGING FACIAL (60 MIN $80)
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="antiaging" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          Rejuvenate your skin with this facial that infuses your skin with anti-oxidants that stimulate regeneration of elastin 
+                          and collagen. This facial is for all skin types showing signs of aging and sun damage. Includes relaxing face, neck, 
+                          shoulder and scalpmassage. (Upgrade to Bella Royal Facial $20 extra).
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title service-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#teen" href="#hotstone" aria-expanded="false" aria-controls="collapseThree">
+                          TEEN FACIAL (60 MIN $75)
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="teen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          This gentle exfoliating facial addresses the needs of teens and helps to alleviate clogged pores and dead 
+                          cell accumulation. Extractions if needed.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title service-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#bella" href="#head" aria-expanded="false" aria-controls="collapseThree">
+                          BELLA ROYAL FACIAL (90 MIN $75)
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="bella" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          Indulge in the ultimate relaxing facial which includes the classic facial with an extended massage and the 
+                          addition of warm mitts on the hands and feet and massage with warm oils and hot stone massage on neck and 
+                          shoulders.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title service-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#cleansing" href="#heat" aria-expanded="false" aria-controls="collapseThree">
+                          DEEP CLEANSING FACIAL (60 MIN $75)
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="cleansing" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <p class="service-desc">
+                          A deep cleansing treatment for skin that is deeply clogged or acneic. Includes deep cleanse, exfoliation, 
+                          steam, hot towels, extractions, masque and neckand shoulder massage.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              
+            </div>
+          </div>
+        </div>
+        
+        <!-- Waxing content -->
+        <div class="modal fade service-modal waxing-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Skin Care</h4>
+              </div>
+              <div class="modal-body">
+                <div class="service-image">
+                  <img src="images/products/waxing-detail.jpg" width="1170" height="574" alt="Skin Care Bellavita" class="img-responsive">
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title service-title">
+                      HAIRSTYLISH BIO
+                    </h4>
+                  </div>
+                  <div class="panel-body">
+                    <p class="service-desc">
+                      Kevin deserunt consectetur adipisicing ut, flank doner culpa excepteur meatloaf elit ullamco. Do ex aliqua 
+                      andouille exercitation sausage tempor ball tip pork chop proident cillum et. Short loin et anim do ut cupidatat 
+                      proident nostrud picanha. Brisket sint tongue, chicken in deserunt minim short ribs.
+                    </p>
+                  </div>
+                </div>
+               </div>
+              
+            </div>
+          </div>
+        </div>
         
         <section class="promo-content">
           <div class="promo-item">
@@ -254,7 +686,7 @@
                 </div>
                 <div class="promo-bg"></div>
               </div>
-              <div class="col-sm-6 promo-detail">
+              <div class="col-sm-6 promo-detail" id="about">
                 <h3 class="content-heading">VISIT US <br> AT BELLA VITA TODAY!</h3>
                 <p class="promo-desc">
                   We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of 
@@ -266,7 +698,7 @@
           </div>
         </section>
         
-        <section class="countable-content" id="about">
+        <section class="countable-content">
           <div class="countable-bg">
             <div class="container">
               <div class="row">
@@ -303,6 +735,12 @@
             <div class="item">
               <img src="images/gallery/room-3.jpg" width="360" height="261" alt="Bellavita Room">
             </div>
+            <div class="item">
+              <img src="images/gallery/room-3.jpg" width="360" height="261" alt="Bellavita Room">
+            </div>
+            <div class="item">
+              <img src="images/gallery/room-1.jpg" width="360" height="261" alt="Bellavita Room">
+            </div>
           </div>
         </section>
         
@@ -315,7 +753,7 @@
           <div class="row contact-detail">
             <div class="col-sm-6 contact-map">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.447756204729!2d-80.34522568555401!3d25.623260820571716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9c421d22e2bb7%3A0x703a8025aa2c7cb7!2sBella+Vita+Salon+and+Spa!5e0!3m2!1sid!2sid!4v1526117793709" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.150151391164!2d-84.05634628478528!3d34.04001928060927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5964c2c159b3f%3A0xaec5ec017b9f6025!2s3370+Lawrenceville-Suwanee+Rd+%23122%2C+Suwanee%2C+GA+30024%2C+Amerika+Serikat!5e0!3m2!1sid!2sid!4v1526527309004" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
               </div>
             </div>
             <div class="col-sm-6 contact-form">
@@ -390,18 +828,22 @@
         <script type="text/javascript">
           $('.gallery-carousel').owlCarousel({
             loop: true,
+            nav: true,
+            dots: false,
+            navText: [
+              '<span aria-label="' + 'Previous' + '" class="glyphicon glyphicon-chevron-left"></span>',
+              '<span aria-label="' + 'Next' + '" class="glyphicon glyphicon-chevron-right"></span>'
+            ],
             responsive:{
               0:{
                 margin: 15,
                 items:1,
-                stagePadding: 40,
-                dots: false
+                stagePadding: 40
               },
               640:{
                 margin: 15,
                 items:1,
-                stagePadding: 100,
-                dots: false
+                stagePadding: 100
               },
               768:{
                 stagePadding: 100,
@@ -428,6 +870,24 @@
         </script>
         <script type="text/javascript" src="vendors/scrollingnav/vendor/jquery-easing/jquery.easing.js"></script>
         <script type="text/javascript" src="vendors/scrollingnav/js/scrolling-nav.js"></script>
+        <script type="text/javascript" src="vendors/malihu.custom.scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script type="text/javascript">
+          (function($){
+            $(window).on("load",function(){
+
+              $(".dropdown-menu-scrollbar").mCustomScrollbar({
+                theme:"dark",
+                mouseWheel:{ preventDefault:true }
+              });
+              
+              $(".service-modal .modal-body").mCustomScrollbar({
+                setHeight:450,
+                theme:"dark"
+              });
+
+            });
+          })(jQuery);
+        </script>
         
     </body>
 </html>
