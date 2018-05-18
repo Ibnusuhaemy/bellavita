@@ -620,6 +620,10 @@ textarea.form-control{
 }
 .service-modal .modal-body{
   padding: 25px 15px 25px 25px;
+  z-index: 2;
+}
+.service-modal .panel-group{
+  margin-bottom: 80px;
 }
 .service-modal .panel-group .panel{
   border-radius: 0;
@@ -635,6 +639,22 @@ textarea.form-control{
 .service-modal .service-desc{
   font-size: 14px;
   line-height: 28px;
+}
+.service-modal .view-menu{
+  text-align: center;
+  padding: 25px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  z-index: 5;
+}
+.view-menu .btn{
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
 }
 
 
@@ -840,6 +860,15 @@ textarea.form-control{
     padding-left: 15px;
     padding-right: 15px;
   }
+  .hero-carousel .item{
+    text-align: center;
+  }
+  .hero-carousel .item .img-slider{
+    max-width: none;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .service-modal .modal-dialog{
     width: 750px;
   }
@@ -944,22 +973,32 @@ textarea.form-control{
   .navbar-nav > li.nav-image{
     display: none;
   }
+  .navbar-nav > li .nav-close{
+    font-size: 20px;
+  }
   .navbar-nav > li{
     display: block;
-    text-align: right;
+    text-align: center;
   }
   .navbar-nav > li > a{
-    padding: 10px 15px;
+    padding: 0 15px;
   }
   .navbar-default .navbar-collapse{
     position: absolute;
+    top: 0;
     right: 0;
+    left: 0;
     border: none;
     box-shadow: none;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(0, 0, 0, 0.35);
-    margin-right: 15px;
+    background: #fff;
+  }
+  .navbar-default .navbar-nav > .active > a, 
+  .navbar-default .navbar-nav > .active > a:hover, 
+  .navbar-default .navbar-nav > .active > a:focus,
+  .navbar-default .navbar-nav > li > a{
+    color: #a1a1a1;
   }
   .navbar-brand{
     height: auto;
@@ -978,9 +1017,21 @@ textarea.form-control{
   .header-intro .logo-image{
     margin-top: -140px;
   }
-  .hero-carousel .item,
-  .hero-carousel .item img{
+  .hero-carousel .item{
     height: 550px;
+  }
+  .hero-carousel .item .img-slider{
+    height: auto;
+    min-height: 550px;
+    max-width: none;
+    min-width: 768px;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
   }
   .hero-caption .logo-text img{
     height: auto;
@@ -995,11 +1046,26 @@ textarea.form-control{
     margin-left: 5px;
     margin-right: 5px;
   }
+  .panel-cta .panel-body{
+    padding: 0 15px;
+  }
   .cta-content .cta-left{
     border-right: none;
+    text-align: center;
+  }
+  .cta-content .content-heading{
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: normal;
+    margin-bottom: 10px;
   }
   .cta-content .btn{
-    padding: 20px 50px;
+    font-size: 20px;
+    line-height: normal;
+    padding: 10px 50px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .service-content{
     background-size: 100% auto;
@@ -1008,7 +1074,7 @@ textarea.form-control{
     padding-top: 35px;
   }
   .service-modal .modal-dialog{
-    width: 100%;
+    width: auto;
   }
   .heading-service{
     position: relative;
@@ -1178,9 +1244,6 @@ textarea.form-control{
   }
 }
 @media screen and (max-width: 399px){
-  .cta-content .btn{
-    font-size: 13px;
-  }
   .heading-service .heading-separator{
     width: 30%;
   }

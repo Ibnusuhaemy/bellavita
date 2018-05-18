@@ -45,7 +45,8 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="#service" class="js-scroll-trigger">Service</a></li>
+                    <li class="visible-xs"><a href="#" class="nav-close"><span class="glyphicon glyphicon-remove-circle"></span></a></li>
+                    <li><a href="#service" class="js-scroll-trigger">Service</a></li>
                     <li><a href="#about" class="js-scroll-trigger">About</a></li>
                     <li class="nav-image"><a href="#" class="js-scroll-trigger"><img src="images/bellavita-unique.png" width="147" height="155" alt="Bellavita Unique"></a></li>
                     <li><a href="#gallery" class="js-scroll-trigger">Gallery</a></li>
@@ -71,7 +72,8 @@
             <div class="owl-carousel owl-theme hero-carousel">
              
               <div class="item">
-                <img src="images/bg-hero.jpg" width="1450" height="699" alt="Bellavita Homepage" class="img-responsive">
+                <img src="images/sliders/slider1.jpg" width="1450" height="699" alt="Bellavita Homepage" class="img-responsive img-slider hidden-xs">
+                <img src="images/sliders/slider1_mobile.jpg" width="480" height="500" alt="Bellavita Homepage" class="img-responsive img-slider visible-xs">
                 <div class="container">
                   <div class="row hero-caption">
                     <div class="logo-text">
@@ -85,7 +87,8 @@
               </div>
               
               <div class="item">
-                <img src="images/bg-hero.jpg" width="1450" height="699" alt="Bellavita Homepage" class="img-responsive">
+                <img src="images/sliders/slider2.jpg" width="1450" height="699" alt="Bellavita Homepage" class="img-responsive img-slider hidden-xs">
+                <img src="images/sliders/slider2_mobile.jpg" width="480" height="500" alt="Bellavita Homepage" class="img-responsive img-slider visible-xs">
                 <div class="container">
                   <div class="row hero-caption">
                     <div class="logo-text">
@@ -99,7 +102,8 @@
               </div>
               
               <div class="item">
-                <img src="images/bg-hero.jpg" width="1450" height="699" alt="Bellavita Homepage" class="img-responsive">
+                <img src="images/sliders/slider3.jpg" width="1450" height="699" alt="Bellavita Homepage" class="img-responsive img-slider hidden-xs">
+                <img src="images/sliders/slider3_mobile.jpg" width="480" height="500" alt="Bellavita Homepage" class="img-responsive img-slider visible-xs">
                 <div class="container">
                   <div class="row hero-caption">
                     <div class="logo-text">
@@ -125,7 +129,9 @@
                 <div class="row">
                   <div class="col-sm-6 cta-left">
                     <p class="content-heading hidden-xs">Call to Make an Appointment</p>
-                    <a href="#" class="btn btn-md btn-green">Call for an Appointment</a>
+                    <p class="content-heading visible-xs">Make an Appointment Today</p>
+                    <a href="tel:779-904-3875" class="btn btn-md btn-green hidden-xs">Call for an Appointment</a>
+                    <a href="tel:779-904-3875" class="btn btn-md btn-green visible-xs">779-904-3875</a>
                   </div>
                   <div class="col-sm-6 cta-right hidden-xs">
                     <p class="content-heading">We're Open on</p>
@@ -368,7 +374,11 @@
                     </div>
                   </div>
                 </div>
-               </div>
+              </div>
+              
+              <div class="view-menu">
+                <a href="#" class="btn btn-md btn-green">View Menu</a>
+              </div>
               
             </div>
           </div>
@@ -491,7 +501,11 @@
                     </div>
                   </div>
                 </div>
-               </div>
+              </div>
+              
+              <div class="view-menu">
+                <a href="#" class="btn btn-md btn-green">View Menu</a>
+              </div>
               
             </div>
           </div>
@@ -616,7 +630,11 @@
                     </div>
                   </div>
                 </div>
-               </div>
+              </div>
+              
+              <div class="view-menu">
+                <a href="#" class="btn btn-md btn-green">View Menu</a>
+              </div>
               
             </div>
           </div>
@@ -649,7 +667,11 @@
                     </p>
                   </div>
                 </div>
-               </div>
+              </div>
+              
+              <div class="view-menu">
+                <a href="#" class="btn btn-md btn-green">View Menu</a>
+              </div>
               
             </div>
           </div>
@@ -888,6 +910,11 @@
             });
           })(jQuery);
         </script>
-        
+        <script type="text/javascript">
+          $('.nav-close').click(function(){
+            $('.navbar-collapse').collapse('hide');
+          });
+        </script>
+                        
     </body>
 </html>
