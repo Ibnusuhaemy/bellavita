@@ -983,6 +983,10 @@ textarea.form-control{
   .navbar-nav > li > a{
     padding: 0 15px;
   }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus{
+    color: #1dbd90;
+  }
   .navbar-default .navbar-collapse{
     position: absolute;
     top: 0;
