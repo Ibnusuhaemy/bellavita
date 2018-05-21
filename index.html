@@ -25,7 +25,13 @@
     </head>
     <body>
         
-        <header class="header-content">
+        <div class="nav-button-top" id="buttontop">
+          <a href="#">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+          </a>
+        </div>
+        
+        <header class="header-content" id="headtop">
           
           <div class="hero">
             <nav class="navbar navbar-default" id="mainNav">
@@ -913,6 +919,41 @@
         <script type="text/javascript">
           $('.nav-close').click(function(){
             $('.navbar-collapse').collapse('hide');
+          });
+        </script>
+        <script type="text/javascript">
+//          window.onscroll = function() {scrollFunction()};
+//
+//          function scrollFunction() {
+//              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//                  document.getElementById("buttontop").style.display = "block";
+//              } else {
+//                  document.getElementById("buttontop").style.display = "none";
+//              }
+//          }
+//
+//          // When the user clicks on the button, scroll to the top of the document
+//          function topFunction() {
+//              document.body.scrollTop = 0; // For Safari
+//              document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+//          }
+          $(document).ready(function(){
+
+            //Check to see if the window is top if not then display button
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('.nav-button-top').fadeIn();
+                } else {
+                    $('.nav-button-top').fadeOut();
+                }
+            });
+
+            //Click event to scroll to top
+            $('.nav-button-top').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+
           });
         </script>
                         

@@ -2,20 +2,23 @@
 
 /* - Font Smoothing - */
 html {
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-font-smoothing: antialiased !important;
-    font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  font-smoothing: antialiased !important;
+}
+body{
+  position: relative;
 }
 
 /* - List - */
 ul{
-    -webkit-padding-start: 0;
-    -moz-padding-start: 0px;
-    -ms-padding-start: 0px;
-    -o-padding-start: 0px;
-    list-style: none;
-    text-align: left;
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0px;
+  -ms-padding-start: 0px;
+  -o-padding-start: 0px;
+  list-style: none;
+  text-align: left;
 }
 
 /* - State - */
@@ -210,6 +213,25 @@ textarea.form-control{
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus{
   background-color: transparent;
+  color: #fff;
+}
+.nav-button-top{
+  width: 70px;
+  height: 70px;
+  background-color: #1dbd90;
+  border-radius: 100%;
+  font-size: 28px;
+  padding: 15px 15px 15px 20px;
+  position: fixed;
+  top: auto;
+  bottom: 20px;
+  right: 20px;
+  z-index: 15;
+  text-align: center;
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.08);
+  display: none;
+}
+.nav-button-top a{
   color: #fff;
 }
 
